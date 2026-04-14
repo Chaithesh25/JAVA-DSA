@@ -29,7 +29,7 @@ class ArrayExample{
 
     void print2Darray(){
         int [][] arr =  new int[3][2];
-        arr[0][0] = 10;
+        arr[0][0] = 10; 
         arr[0][1] = 20;
         arr[1][0] = 30;
         arr[1][1] = 40;
@@ -55,6 +55,27 @@ class ArrayExample{
 
         
     }
+
+
+    void foreEach(){
+        int[][] arr =  new int[3][2];
+        arr[0][0] = 10;
+        arr[0][1] = 20;
+        arr[1][0] = 30;
+        arr[1][1] = 40;
+        arr[2][0] = 50;
+        arr[2][1] = 60;
+
+
+        for(int[] rows : arr){
+
+            // System.out.println(rows);
+            for(int ele : rows){
+                System.out.println("elements are: "+ele);
+            }
+
+        }
+    }
 }
 
 
@@ -64,7 +85,7 @@ public class multiDime {
     public static void main(String []args){
        ArrayExample obj = new ArrayExample();
 
-       obj.whileloop();
+       obj.foreEach();
     }
     
 }
