@@ -11,14 +11,19 @@ class ArrayExample{
         arr[2][1] = 60;
 
 
-        int i = 0,j = 0;
+        int i = 0;
         while(i < arr.length){
 
+            int j = 0;
+            // System.out.println("j value"+j);
             while (j < arr[i].length) {
                 System.out.println(arr[i][j]);
                 j++;
+                
             }
+            // System.out.println(arr[i].length+" "+j);
             i++;
+            // System.out.println("i value"+i);
         }
     }
 
