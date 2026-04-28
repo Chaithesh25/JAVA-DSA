@@ -49,10 +49,14 @@ public class last {
         ArrayList<Integer> result = oc.countOcc();
         int result2 = oc.method2();
     
-       System.out.println(result.get(result.size()-1));
-       System.out.println("Result 2: "+result2);
-
-        
+    //    System.out.println(result.get(result.size()-1));
+       
+       if(result2 != -1){
+           
+           System.out.println("Result 2: "+result2);
+        }else{
+            System.out.println("element not found in the array");
+        }
             // System.out.println("last occurence of "+x+" is at position "+result[result.length-1]);
         
 
