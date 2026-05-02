@@ -9,10 +9,13 @@ class Check{
 
     boolean find(){
         // 1,9,7,8,9
-        for(int i = 0; i<arr.length-1; i++){
-            if( arr[i] >  arr[i+1]){
+        System.out.println("a");
+        for(int i = 1; i<arr.length-1; i++){
+            if( arr[i] < arr[i-1]){
                 sortedd = false;
+                break;
             }
+            
         }
         return sortedd;
     }
@@ -28,7 +31,10 @@ class Check{
         System.out.println("Array is not sorted..");
        }else{
         System.out.println("Array is sorted...");
-       }    
+       }
+       
+       
+       
 
     
     }
@@ -36,11 +42,12 @@ class Check{
 
 public class sorted {
     public static void main(String[]args){
-        int[] Array = {1,5,7,8,9};
+        int[] Array = {1,9,7,8,9};
 
         Check ck = new Check(Array);
 
-        ck.display();
+        // ck.display();
+        ck.find();
 
 
     }
